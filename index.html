@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Tip Calculator</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="project">
+      <div class="title">
+        <div class="title-up">S P L I</div>
+        <div class="title-below">T T E R</div>
+      </div>
+
+      <div class="tip-calculator">
+        <div class="left">
+          <div class="bill">
+            <div class="bill-text head-text">Bill</div>
+            <div class="bill-submit">
+              <img
+                class="bill-icon"
+                src="./images/icon-dollar.svg"
+                alt="dollar"
+              />
+              <input class="bill-input" type="text" value="100" maxlength="6" />
+            </div>
+          </div>
+          <div class="tip">
+            <div class="tip-text head-text">Select Tip %</div>
+            <div class="tips-up">
+              <button class="tip-5 clicked">5%</button>
+              <button class="tip-10">10%</button>
+              <button class="tip-15">15%</button>
+            </div>
+            <div class="tips-below">
+              <button class="tip-25">25%</button>
+              <button class="tip-50">50%</button>
+              <input class="tip-custom" value="Custom" maxlength="3" />
+            </div>
+          </div>
+          <div class="people-number">
+            <div class="people-number-texts head-text">
+              <div class="people-number-text">Number of People</div>
+              <div class="people-number-error hidden">Can't be zero</div>
+            </div>
+            <div class="people-number-submit">
+              <img
+                class="people-number-icon"
+                src="./images/icon-person.svg"
+                alt="dollar"
+              />
+              <input
+                class="people-number-input"
+                type="text"
+                value="1"
+                maxlength="2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="tip-amount">
+            <div class="tip-amount-text">
+              <div class="tip-amount-title">Tip Amount</div>
+              <div class="tip-amount-subtitle">/ person</div>
+            </div>
+            <div class="tip-amount-calculate">$5.00</div>
+          </div>
+          <div class="total">
+            <div class="total-text">
+              <div class="total-title">Total</div>
+              <div class="total-subtitle">/ person</div>
+            </div>
+            <div class="total-calculate">$105.00</div>
+          </div>
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">ASU</a>.
+      </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
